@@ -1,0 +1,194 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  background: rgb(161, 190, 192);
+  margin-top: 20px;
+}
+
+.btns{
+  display:block;
+  margin: 65px 65px;
+  background: rgb(40, 109, 114);
+  color: white;
+  position: relative;
+  box-sizing: border-box;
+}
+
+h2 {
+   text-align: center;
+  height: 80px;
+ }
+h2:visited {
+  color: turquoise;
+}
+h2:hover {
+  text-decoration: underline;
+  color: tomato;
+}
+h2:active {
+  color: darkred;
+  text-decoration: underline;
+}
+
+.container {
+  width: 400px;
+  height: 400px;
+  margin: 100px auto;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  60%,
+  100% {
+    -webkit-transforms: translatey(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transforms: translatey(-20px);
+    transform: translateY(-20px);
+  }
+  80% {
+    -webkit-transforms: translatey(-10px);
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes lateral {
+  0%,
+  20%,
+  60%,
+  100% {
+    -webkit-transforms: translatex(0);
+    transform: translatex(0);
+  }
+  40% {
+    -webkit-transforms: translatex(-20px);
+    transform: translateY(-20px);
+  }
+  80% {
+    -webkit-transforms: translatex(-10px);
+    transform: translatex(-10px);
+  }
+}
+
+btns {
+  text-align: center;
+  margin-top: 50px auto;
+  width: 400px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 160px;
+}
+.efeito {
+  align-items: center;
+  border: none;
+  color: #ffffff;
+  padding: 20px;
+  margin: 10px;
+  font-size: 24px;
+  line-height: 50px;
+  border-radius: 10px;
+  position: relative;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: all 400ms ease;
+}
+
+.efeito-1 {
+  background-color: #283428;
+}
+
+.efeito-1:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0px;
+  height: 64px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  transition: all 2s ease;
+}
+
+.efeito-1:hover:before {
+  width: 100%;
+}
+
+.efeito-2 {
+  background-color: #772150;
+}
+
+.efeito-2:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 0px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  transition: all 2s ease;
+}
+
+.efeito-2:hover:before {
+  height: 64px;
+}
+
+.efeito-3 {
+  background-color: #009c30;
+}
+.efeito-3:hover {
+  background: rgba(0, 0, 0, 0);
+  color: #009c30;
+  box-shadow: inset 0 0 0 3px #283428;
+  animation: lateral 1s;
+}
+
+.efeito-4 {
+  background-color: #f18f01;
+}
+
+.efeito-4:hover {
+  animation: bounce 2s;
+}
+
+.efeito-5 {
+  background: #c42b2b;
+}
+
+.efeito-5:hover {
+  transform: skew(20deg, -20deg);
+}
+
+.efeito-6 {
+  background: #92a1a0;
+  transform-style: preserve-3d;
+}
+
+.efeito-6:after {
+  top: -100%;
+  left: 0px;
+  width: 100%;
+  padding: 20px;
+  font-size: 14px;
+  position: absolute;
+  background: rgb(123, 54, 163);
+  border-radius: 10px;
+  box-sizing: border-box;
+  content: "Aperte!";
+  transform-origin: left bottom;
+  transform: rotateX(90deg);
+}
+
+.efeito-6:hover {
+  transform-origin: center bottom;
+  transform: rotateX(-90deg) translateY(100%);
+}
+
+
